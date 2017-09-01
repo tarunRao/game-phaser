@@ -1,12 +1,10 @@
 import './style/main.scss';
 
-import { NameClass } from './class/name-class';
-
+import { DemoGame } from './class/demo-game';
 (function(){
     
     document.addEventListener('DOMContentLoaded', (event) => {
-        var instance = new NameClass();
-        instance.foo();
+        var game = new DemoGame();
     });
 
 })();
