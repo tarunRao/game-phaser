@@ -1,16 +1,19 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
 function getPlugin() {
+    var plugin = [
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        })
+    ];
+    
     if(process.env.NODE_ENV === 'production') {
-       return [
-            new webpack.optimize.UglifyJsPlugin()
-        ];
-    } else {
-        return [
-
-        ];
+       plugin.push = new webpack.optimize.UglifyJsPlugin();
     }
+
+    return plugin;
 }
 
 config = {

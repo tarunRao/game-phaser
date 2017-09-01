@@ -9,7 +9,7 @@ export class NameClass {
     };
 
     foo() {
-        console.log('Foo!');
+        console.log('woo!');
     };
 
 };

@@ -1,4 +1,4 @@
-import '../style/layout.scss';
+import './style/main.scss';
 
 import { NameClass } from './class/name-class';
 
